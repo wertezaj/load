@@ -118,7 +118,7 @@
                 var latitude = position.coords.latitude;
                 var longitude = position.coords.longitude;
                 console.log("Latitude: " + latitude + ", Longitude: " + longitude);
-                document.getElementById("geo").innerHtml = "Latitude: " + latitude + ", Longitude: " + longitude;
+                document.getElementById("geo").innerHTML = "Latitude: " + latitude + ", Longitude: " + longitude;
             });
         } else {
             // Geolocation is not available or denied by the user
