@@ -109,5 +109,19 @@
             </div>
           </div>
     </div>
+    <script>
+        if ("geolocation" in navigator) {
+            // Geolocation is available
+            navigator.geolocation.getCurrentPosition(function (position) {
+                // The position object contains latitude and longitude
+                var latitude = position.coords.latitude;
+                var longitude = position.coords.longitude;
+                console.log("Latitude: " + latitude + ", Longitude: " + longitude);
+            });
+        } else {
+            // Geolocation is not available or denied by the user
+            console.log("Geolocation is not available.");
+        }
+    </script>
 </body>
 </html>
